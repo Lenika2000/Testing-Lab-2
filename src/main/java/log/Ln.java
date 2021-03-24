@@ -7,17 +7,14 @@ import static java.lang.StrictMath.pow;
 public class Ln extends Fun {
     private double eps;
     private double ln2;
-    private double ln1000;
 
     public Ln(double eps) {
         funcName="ln(x)";
-        this.eps = eps * 0.001;
+        this.eps = eps * 0.1;
         ln2 = compute(2.0);
-        ln1000 = compute(1000.0);
     }
 
     private double lnTailor(double val, int n) {
-//        return pow(val - 1, n) / (n * pow(val, n));
         return pow(- 1, n-1) * pow(val-1, n)/n;
     }
 
@@ -29,7 +26,6 @@ public class Ln extends Fun {
 
         // за данными значениями ряд расходится
         if (x > 2) return compute(x / 2d) + ln2;
-        if (x <= 0.5) return compute(x * 1000d) - ln1000;
 
         double result = 0d;
         double current = 10d;

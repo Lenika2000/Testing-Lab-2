@@ -17,9 +17,6 @@ public class LnUnitTest {
         // ключ - x, значение - введенное значение - y
 
         arrayTestValues.put( 0d, Double.NEGATIVE_INFINITY);
-
-        // проверка для x=<0.5
-        arrayTestValues.put( 0.01, -4.6051701859880913680359);
         arrayTestValues.put( 0.1, -2.302585092994045684017991454);
         arrayTestValues.put( 0.5, -0.69315);
         // пересечение с осью OX

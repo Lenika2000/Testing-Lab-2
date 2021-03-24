@@ -19,38 +19,38 @@ public class SinUnitTest {
         // ключ - x, значение - введенное значение - y
 
         //проверка нулевого значения
-//        arrayTestValues.put( 0d, 0d);
+        arrayTestValues.put( 0d, 0d);
 
         //проверка правой стороны
-//        arrayTestValues.put(Math.PI / 6, 0.5);
-//        arrayTestValues.put(Math.PI / 4, Math.sqrt(2) / 2);
-//        arrayTestValues.put(Math.PI / 3, Math.sqrt(3) / 2);
-//        arrayTestValues.put(Math.PI / 2, 1d);
+        arrayTestValues.put(Math.PI / 6, 0.5);
+        arrayTestValues.put(Math.PI / 4, Math.sqrt(2) / 2);
+        arrayTestValues.put(Math.PI / 3, Math.sqrt(3) / 2);
+        arrayTestValues.put(Math.PI / 2, 1d);
         arrayTestValues.put(2*Math.PI / 3, Math.sqrt(3.0) / 2);
-//        arrayTestValues.put(3* Math.PI / 4, Math.sqrt(2) / 2);
-//        arrayTestValues.put(5*Math.PI / 6, 0.5);
+        arrayTestValues.put(3* Math.PI / 4, Math.sqrt(2) / 2);
+        arrayTestValues.put(5*Math.PI / 6, 0.5);
 
-        //проверка левой стороны (на четность)
-//        arrayTestValues.put(-Math.PI / 6, -0.5);
-//        arrayTestValues.put(-Math.PI / 4, -Math.sqrt(2) / 2);
-//        arrayTestValues.put(-Math.PI / 3, -Math.sqrt(3) / 2);
-//        arrayTestValues.put(-Math.PI / 2, -1d);
-//        arrayTestValues.put(-2*Math.PI / 3, -Math.sqrt(3) / 2);
-//        arrayTestValues.put(-3* Math.PI / 4, -Math.sqrt(2) / 2);
-//        arrayTestValues.put(-5*Math.PI / 6, -0.5);
+//        проверка левой стороны (на четность)
+        arrayTestValues.put(-Math.PI / 6, -0.5);
+        arrayTestValues.put(-Math.PI / 4, -Math.sqrt(2) / 2);
+        arrayTestValues.put(-Math.PI / 3, -Math.sqrt(3) / 2);
+        arrayTestValues.put(-Math.PI / 2, -1d);
+        arrayTestValues.put(-2*Math.PI / 3, -Math.sqrt(3) / 2);
+        arrayTestValues.put(-3* Math.PI / 4, -Math.sqrt(2) / 2);
+        arrayTestValues.put(-5*Math.PI / 6, -0.5);
 
-        //проверка граничных значений
-//        arrayTestValues.put(-Math.PI, 0d);
-//        arrayTestValues.put(Math.PI, 0d);
+//        проверка граничных значений
+        arrayTestValues.put(-Math.PI, 0d);
+        arrayTestValues.put(Math.PI, 0d);
 
-//        //тестирование NaN, Infinity
-//        arrayTestValues.put(NaN, NaN);
-//        arrayTestValues.put(Double.POSITIVE_INFINITY, NaN);
-//        arrayTestValues.put(Double.NEGATIVE_INFINITY, NaN);
+        //тестирование NaN, Infinity
+        arrayTestValues.put(NaN, NaN);
+        arrayTestValues.put(Double.POSITIVE_INFINITY, NaN);
+        arrayTestValues.put(Double.NEGATIVE_INFINITY, NaN);
 
-        //тестовые значения за границами -2pi ; 2pi
-//        arrayTestValues.put(7*Math.PI / 6, -0.5);
-//        arrayTestValues.put(-7*Math.PI / 6, 0.5);
+//        тестовые значения за границами -2pi ; 2pi
+        arrayTestValues.put(7*Math.PI / 6, -0.5);
+        arrayTestValues.put(-7*Math.PI / 6, 0.5);
 
     }
 

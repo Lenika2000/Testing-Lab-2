@@ -27,12 +27,11 @@ public class FullIntegration {
 
     @Test
     public void systemTest() {
-        assertEquals(0d, equationSystem.compute(0d), eps);
         assertEquals(0d, equationSystem.compute(-Math.PI*2), eps);
         assertEquals(-1d, equationSystem.compute(-Math.PI/2), eps);
         assertEquals(1d, equationSystem.compute(-Math.PI*3/2), eps);
         assertEquals(0d, equationSystem.compute(0d), eps);
-        assertEquals(0d, equationSystem.compute(1d), eps);
+        assertThrows(ArithmeticException.class, () -> equationSystem.compute(1d));
         assertEquals(0d, equationSystem.compute(2d), eps);
         assertEquals(0d, equationSystem.compute(100d), eps);
     }
